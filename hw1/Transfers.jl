@@ -57,7 +57,7 @@ end
 # ------------------ SNAP ---------------------------------------------------------------- #
 #snap_rules_csv = CSV.read("data/WelfareRules/SNAPRules.csv",DataFrame)
 #fp = joinpath(@__DIR__, "..", "data", "WelfareRules", "SNAPRules.csv")
-fp = joinpath("C:\\Users\\bayle\\Documents\\hw1_micro_labour_data\\WelfareRules\\SNAPRules.csv")
+fp = joinpath("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\hw1\\hw1_micro_labour_data\\WelfareRules\\SNAPRules.csv")
 snap_rules_csv = CSV.read(fp,DataFrame)
 
 const PG::Vector{Float64} = convert(Array{Float64,1},snap_rules_csv.PG) 
@@ -90,7 +90,7 @@ end
 
 # -------------------- TANF ------------------------------------------ #
 #tanf_rules_csv = CSV.read("data/WelfareRules/WelfareRules.csv",DataFrame)
-fp = joinpath("C:\\Users\\bayle\\Documents\\hw1_micro_labour_data\\WelfareRules\\WelfareRules.csv")
+fp = joinpath("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\hw1\\hw1_micro_labour_data\\WelfareRules\\WelfareRules.csv")
 tanf_rules_csv = CSV.read(fp,DataFrame)
 
 const NS::Vector{Float64} = convert(Array{Float64,1},tanf_rules_csv.NS)
@@ -146,7 +146,7 @@ end
 
 # --------------------- TAXES ------------------------------------ #
 #const TDAT = readdlm("data/WelfareRules/TaxsimVector.csv",',')[:] # great
-fp = joinpath("C:\\Users\\bayle\\Documents\\hw1_micro_labour_data\\WelfareRules\\TaxsimVector.csv")
+fp = joinpath("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\hw1\\hw1_micro_labour_data\\WelfareRules\\TaxsimVector.csv")
 const TDAT = readdlm(fp,',')[:] # great
 
 # -- TDAT is data ordered as follows:  year,state,depx,earnings
