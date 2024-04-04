@@ -12,10 +12,13 @@ j_idx(S,A,H) = (S + A)*2 + H + 1
 
 J = 6 #<- 6 choices, total
 function j_inv(j)
-    p = fld(j-1,3)
-    H::Int64 = mod(j-1,3)
+    p = fld(j-1,2)
+    H::Int64 = mod(j-1,2) 
     S::Int64 = p>0
     A::Int64 = p==2
+    if j > J
+        error("j=$j is out of bounds")
+    end
     return S,A,p,H
 end
 
