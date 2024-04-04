@@ -9,7 +9,7 @@ function pars(Kτ::Int64,Kε::Int64)
     αA = zeros(Kτ)
     αS = zeros(Kτ)
     αR = zeros(2)
-    σ = fill(2.,2)
+    σ = fill(2.,2) # creates array of 2x2 with 2. in each element
 
 
     αl=1 #added this in for the utility function
