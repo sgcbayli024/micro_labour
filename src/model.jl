@@ -1,4 +1,4 @@
-include("../src/Transfers.jl")
+include("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\src\\Transfers.jl")
 
 
 function pars(Kτ::Int64,Kε::Int64)
@@ -64,7 +64,7 @@ function test_model()
     return model_data(T,y0,age0,SOI,num_kids,TotKids,age_kid,cpi,R,Kω,TL)
 end
 
-include("model/choices.jl")
-include("model/utility.jl")
-include("model/states_transitions.jl")
-include("model/solve.jl")
+include("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\src\\model\\choices.jl")
+include("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\src\\model\\utility.jl")
+include("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\src\\model\\states_transitions.jl")
+include("C:\\Users\\bayle\\Documents\\Github\\micro_labour\\src\\model\\solve.jl")
